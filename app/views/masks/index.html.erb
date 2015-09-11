@@ -1,0 +1,14 @@
+<html lang="en" ng-app="AngularUIMask">
+  <head>
+    <title>Angular UI Mask</title>
+
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-mask/dist/mask.js"></script>
+    <script type="text/javascript" src="javascript/mask/welcomeFile.js"></script>
+  </head>
+  <body>
+    <div ng-controller="initialCtrl">
+       <input type="text" ui-mask="'(999).999-99'" placeholder="(___).___-__" ng-model="$parent.number"  />
+    </div>
+  </body>
+</html>
